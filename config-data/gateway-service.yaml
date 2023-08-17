@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8080
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: usuario-service
+          uri: lb://usuario-service
+          predicates:
+            - Path=/usuario/**
+        - id: carro-service
+          uri: lb://carro-service
+          predicates:
+            - Path=/carro/**
+        - id: moto-service
+          uri: lb://moto-service
+          predicates:
+            - Path=/moto/**
+security:
+  jwt:
+    secret: SpVODYJhn6QGPfyHo19ZVbTsSpVODYJhn6QGPfyHo19ZVbTs
+    issuer: test
+    ttlMillis: 345600000
+server:
+  port: 8000
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+    instance:
+      hostname: localhost
