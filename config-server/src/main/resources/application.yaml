@@ -1,6 +1,6 @@
 server:
   port: 8080
-sprint:
+spring:
   cloud:
     config:
       server:
@@ -8,5 +8,6 @@ sprint:
           default-label: config-server
           uri: https://github.com/caraquista/microservicios-curso
           search-paths: config-data
+        bootstrap: true
   application:
     name: config-service

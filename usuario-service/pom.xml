@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.caraquista</groupId>
-	<artifactId>microservices</artifactId>
+	<artifactId>usuario-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>microservices</name>
+	<name>usuario-service</name>
 	<description>Microservices Curso.</description>
 	<properties>
 		<java.version>17</java.version>
