@@ -16,3 +16,11 @@ security:
     ttlMillis: 345600000
 server:
   port: 8083
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+    instance:
+      hostName: localhost
