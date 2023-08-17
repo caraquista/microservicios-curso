@@ -1,6 +1,5 @@
 package org.caraquista.microservices.feignclients;
 
-import org.caraquista.microservices.modelos.Carro;
 import org.caraquista.microservices.modelos.Moto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
