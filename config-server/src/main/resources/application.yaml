@@ -1,0 +1,12 @@
+server:
+  port: 8080
+sprint:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: config-server
+          uri: https://github.com/caraquista/microservicios-curso
+          search-paths: config-data
+  application:
+    name: config-service

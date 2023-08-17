@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cursoJava
+    username: api
+    password: trudat
+  application:
+    name: carro-service
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8080
+security:
+  jwt:
+    secret: SpVODYJhn6QGPfyHo19ZVbTsSpVODYJhn6QGPfyHo19ZVbTs
+    issuer: test
+    ttlMillis: 345600000
+server:
+  port: 8082
