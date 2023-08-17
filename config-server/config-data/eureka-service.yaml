@@ -17,6 +17,6 @@ security:
 server:
   port: 8761
 eureka:
-    client:
-        registerWithEureka: false
-        fetchRegistry: false
+  client:
+    register-with-eureka: false
+    fetch-registry: false
