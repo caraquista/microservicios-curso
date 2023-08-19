@@ -17,8 +17,8 @@ import java.util.Map;
 
 @Service
 public class UsuarioServicio {
-    @Autowired
-    private CircuitBreakerFactory circuitBreakerFactory;
+   // @Autowired
+   // private CircuitBreakerFactory circuitBreakerFactory;
     @Autowired
     private UsuarioRepository usuarioRepository;
     @Autowired
