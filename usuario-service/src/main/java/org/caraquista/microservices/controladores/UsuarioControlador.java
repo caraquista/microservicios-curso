@@ -39,6 +39,7 @@ public class UsuarioControlador {
         return ResponseEntity.ok(nuevoUsuario);
     }
 
+
     @GetMapping("carros/{id}")
     public ResponseEntity<List<Carro>> getCarros(@PathVariable("id") int id) {
         Usuario usuario = usuarioServicio.getUsuarioById(id);

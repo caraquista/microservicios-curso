@@ -7,6 +7,7 @@ import org.caraquista.microservices.modelos.Carro;
 import org.caraquista.microservices.modelos.Moto;
 import org.caraquista.microservices.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.circuitbreaker.CircuitBreakerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -16,6 +17,8 @@ import java.util.Map;
 
 @Service
 public class UsuarioServicio {
+    @Autowired
+    private CircuitBreakerFactory circuitBreakerFactory;
     @Autowired
     private UsuarioRepository usuarioRepository;
     @Autowired
